@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>377 Lab 2 - Claire Jacobs</title>
+        <style>
+            body {
+                background-color: beige;
+            }
+            .submit {
+                color: bisque;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Nice to meet you!</h1>
+        <!-- Name Fields -->
+        <form name="contactForm" method="get" action="lab2_form_redirect.html">
+            <div class="contactUs">
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" required>
+                <br>
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName" required>
+                <br>
+            </div>
+
+            <!-- Date of Birth -->
+            <label for="birthDate">Date of Birth: </label>
+            <input type="date" id="birthDate">
+            <br>
+            
+            <!-- Address -->
+            <h3>Address</h3>
+            <label for="street">Street</label>
+            <input type="text" id="street"><br>
+            <label for="city">City</label>
+            <input type="text" id="city"><br>
+            <label for="state">State</label>
+            <input type="text" id="state"><br>
+            <label for="zip">Zip</label>
+            <input type="text" id="zip">
+            <br><hr>
+
+            <!-- University Affiliation -->
+            <label for="university">What university are you affiliated with: </label>
+            <select id="university" name="university">
+                <option hidden disabled selected value>-- Select Option --</option>
+                <option value="umd">UMD</option>
+                <option value="umd">UMBC</option>
+                <option value="umd">Other</option>
+            </select>
+            <br><hr>
+
+            <!-- Email Address -->
+            <label for="email">What is the best email to reach you?</label>
+            <input type="email" id="email" placeholder="test@gmail.com" required>
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
